@@ -45,16 +45,17 @@ docker-compose up -d
 docker-compose -f prod.yml up
 
 **command line in the docker container**  
-docker exec -it <container id> bash
+<div>docker exec -it <container id> bash</div>
 
 **makes it so the docker container can collect static files for nginx.**  
-docker-compose -f prod.yml run --rm app python manage.py collectstatic
+<div>docker-compose -f prod.yml run --rm app python manage.py collectstatic</div>
 
-**docker exec -it <container name> /bin/bash**  
-bash into directory
+**bash into directory**  
+docker exec -it <container name> /bin/bash
 
-**docker cp <containerId>:/file/path/within/container /host/path/target**  
-copy file to host from docker container
+**copy file to host from docker container**  
+docker cp <containerId>:/file/path/within/container /host/path/target
+**source for drax is <containerid>:/usr/src/drax/**
 
 **fake migration**  
 python3 manage.py migrate app_name migration_number --fake  
