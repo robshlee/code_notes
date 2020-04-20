@@ -56,4 +56,12 @@ conda list
 conda activate myenv  
 conda install ipykernal
 
+**see list of available jupyter kernals**  
+jupyter kernelspec list
+
+**remove kernals from jupyter**  
+jupyter kernelspec uninstall myenv
+
+**remove/delete anaconda environment**  
+conda env remove -n myenv
 
