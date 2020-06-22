@@ -1,0 +1,36 @@
+/* Loading CSS form external file. */
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+/* Set all header tags one color. */
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+
+/* For buttons with different colors example. */
+/* Objects can use multiple classes. Just seperate with space */
+/* In css: */
+.btn {
+    padding: 10px;
+    color: white;
+}
+.btn-1 { background-color: green; }
+.btn-2 { background-color: blue; }
+
+/* In html: */
+<button class="btn btn-1">
+    button 1
+</button>
+<button class="btn btn-2">
+    button 2
+</button>
+
+/* You can load CSS as a style element which means putting it in the header of the html page. */
+<head>
+    <style>
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
